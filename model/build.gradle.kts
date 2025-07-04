@@ -5,8 +5,7 @@ plugins {
 kotlin {
     val commonMain by sourceSets.getting {
         dependencies {
-            implementation(project(":model"))
+            implementation(libs.kotlinxSerialization)
         }
     }
-    val jvmTest by sourceSets.getting {} // 为测试选择一种运行时
 }
