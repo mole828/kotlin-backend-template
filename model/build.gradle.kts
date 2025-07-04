@@ -4,6 +4,11 @@ plugins {
 }
 
 kotlin {
+    js {
+        browser{}
+        binaries.library()
+        generateTypeScriptDefinitions()
+    }
     val commonMain by sourceSets.getting {
         dependencies {
             implementation(libs.kotlinxSerialization)
