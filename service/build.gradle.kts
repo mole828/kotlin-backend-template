@@ -5,7 +5,7 @@ plugins {
 kotlin {
     val commonMain by sourceSets.getting {
         dependencies {
-            implementation(project(":model"))
+            api(project(":model"))
         }
     }
     val jvmTest by sourceSets.getting {} // 为测试选择一种运行时

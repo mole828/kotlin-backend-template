@@ -19,5 +19,6 @@ plugins {
 
 include(":model")
 include(":service")
+include(":backend")
 
 rootProject.name = "kotlin-backend-template"
